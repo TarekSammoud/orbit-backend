@@ -1,0 +1,16 @@
+[project]
+name = "poc"
+version = "0.1.0"
+description = "A small FastAPI-to-Minikube deployment proof of concept"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.143.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
